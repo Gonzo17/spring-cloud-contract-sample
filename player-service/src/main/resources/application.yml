@@ -1,5 +1,6 @@
 info:
   app:
+    name: @project.name@
     version: @project.version@
 
 spring:
