@@ -13,6 +13,10 @@ public class PlayerController {
 	@RequestMapping("/player/{playerName}")
 	@ResponseBody
 	public PlayerInfoDto getPlayerInfo(@PathVariable String playerName) {
-		return PlayerInfoDto.builder().id(1L).name(playerName).mail("gonzo@mail.com").build();
+		if (playerName.equalsIgnoreCase("gonzo")) {
+			return PlayerInfoDto.builder().id(1L).name("gonzo").mail("gonzo@mail.com").build();
+		} else {
+			throw new PlayerNotFoundException();
+		}
 	}
 }
