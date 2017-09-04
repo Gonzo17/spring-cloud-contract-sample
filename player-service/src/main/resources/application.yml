@@ -15,5 +15,5 @@ profiles: test
 
 eureka:
   client:
-    enabled: true
+    enabled: false
 
