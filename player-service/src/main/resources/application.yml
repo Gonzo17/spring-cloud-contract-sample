@@ -1,0 +1,19 @@
+info:
+  app:
+    version: @project.version@
+
+spring:
+  application:
+    name: player-service
+
+server:
+  port: 8091
+
+---
+
+profiles: test
+
+eureka:
+  client:
+    enabled: true
+

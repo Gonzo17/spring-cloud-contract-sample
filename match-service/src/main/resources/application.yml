@@ -1,0 +1,11 @@
+info:
+  app:
+    name: @project.name@
+    version: @project.version@
+
+spring:
+  application:
+    name: match-service
+
+server:
+  port: 8090

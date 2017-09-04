@@ -1,0 +1,23 @@
+info:
+  app:
+    name: @project.name@
+    version: @project.version@
+
+spring:
+  application:
+    name: external-api
+
+server:
+  port: 8092
+
+---
+
+profiles: test
+eureka:
+  client:
+    enabled: false
+
+
+
+
+
